@@ -20,6 +20,9 @@
          </style>
    </head>
    <body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
        <div class="grid-container">
            <header class="header">
                <h1>สถานที่น่าเที่ยวในกรุงเทพมหานคร</h1>
@@ -56,11 +59,32 @@
                </ul>
            </nav>
            <main class="main">
-               <img src="https://roijang.com/wp-content/uploads/2023/07/af168008-cfd9-43de-80bf-c98378bd825e.jpg" alt="ภาพวิวกรุงเทพมหานคร">
-               <!--ภาพมาจาก https://roijang.com/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E/-->
-           </main>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://roijang.com/wp-content/uploads/2023/07/shutterstock_1645905541-1.jpg" class="d-block w-100" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://roijang.com/wp-content/uploads/2023/07/shutterstock_1545831815.jpg" class="d-block w-100" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://roijang.com/wp-content/uploads/2023/07/shutterstock_1032764254.jpg" class="d-block w-100" alt="Third slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </main>
            <aside class="sidebar">กรุงเทพมหานคร เรียกโดยย่ออีกอย่างว่า กรุงเทพ เป็นเมืองหลวง นครและมหานครที่มีประชากรมากที่สุดของประเทศไทย เป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคาร การพาณิชย์ การสื่อสาร และความเจริญของประเทศ ตั้งอยู่บนสามเหลี่ยมปากแม่น้ำเจ้าพระยา</aside>
            <footer class="footer">&copy; 2024 ที่ท่องเที่ยวจังหวัดกกรุงเทพ</footer>
        </div>
    </body>
+   <script>var myCarousel = document.querySelector('#carouselExampleControls');</script>
+   <script>var carousel = new bootstrap.Carousel(myCarousel);</script>
    </html>
